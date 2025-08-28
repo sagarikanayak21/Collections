@@ -1,0 +1,15 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamStringLambda {
+	public static void main(String[] args) {
+		List<String> stringList = Arrays.asList("ABCD", "XY", "PQRST", "LMNOPQR");
+		System.out.println(stringList);
+		
+		stringList.stream().filter(x -> x.length()>2).forEach(System.out::println);
+		
+		
+	}
+}

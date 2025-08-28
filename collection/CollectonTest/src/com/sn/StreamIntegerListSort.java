@@ -1,0 +1,28 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamIntegerListSort {
+	public static void main(String[] args) {
+		List<Integer> intList = Arrays.asList(10,90,60,50);
+//		System.out.println(intList);
+		
+//		intList.stream().forEach(System.out::print);
+		
+//		intList.stream().forEach(i -> {
+//			System.out.print(i + " ");
+//		});
+		
+		List<Integer> sortedList = intList.stream().sorted()
+				.collect(Collectors.toList());
+		System.out.println("===Ascending Order Sorting===");
+		System.out.println(sortedList);
+		
+		List<Integer> reversedSortList = intList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		System.out.println("===Reverse Order Sorting====");
+		System.out.println(reversedSortList);
+	}
+}

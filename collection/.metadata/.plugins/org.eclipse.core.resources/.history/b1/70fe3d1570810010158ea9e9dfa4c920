@@ -1,0 +1,27 @@
+package com.sn.practice;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+class MyComparator implements Comparator<Employee> {
+	@Override
+	public int compare(Employee e1, Employee e2) {
+		return 0;
+	}
+}
+
+public class EmployeeListSort {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		empList.add(new Employee(102, "Sagarika", 300.50));
+		empList.add(new Employee(103, "Sangita", 100.30));
+		empList.add(new Employee(101, "Priyanka", 200.70));
+		System.out.println(empList);
+		
+		
+		
+	}
+}

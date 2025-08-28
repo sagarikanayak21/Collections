@@ -1,0 +1,17 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.vo.Student;
+
+public class StudentListPrint {
+	public static void main(String[] args) {
+		List<Student> stdList = new ArrayList<>();
+		
+		stdList.add(new Student(100, "Lucky", "Science", 80, 90, 70));
+		stdList.add(new Student(101, "Sagarika", "Science", 85, 95, 75));
+		stdList.add(new Student(102, "Sangita", "Science", 60, 50, 40));
+		stdList.add(new Student(103, "Priyanka", "Science", 65, 55, 45));
+	}
+}

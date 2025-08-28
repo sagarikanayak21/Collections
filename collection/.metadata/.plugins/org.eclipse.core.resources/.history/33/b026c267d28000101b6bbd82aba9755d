@@ -1,0 +1,31 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+class EmpComparator implements Comparator<Employee> {
+	public int compare(Employee e1, Employee e2) {
+//		return e1.getEmpId()>e2.getEmpId() ? 1 : e1.getEmpId()<e2.getEmpId() ? -1 : 0;
+		return Integer.compare(e1.getEmpId(), e2.getEmpId());
+	}
+}
+
+public class SortEmployeeList {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		
+		empList.add(new Employee(102, "Sidhartha", 20.0));
+		empList.add(new Employee(101,"Sagarika", 10.0));
+		empList.add(new Employee(103, "Rupa" , 30.0));
+		System.out.println(empList);
+		
+		Collections.sort(empList, new EmpComparator());
+		System.out.println("===After Sorting===");
+		System.out.println(empList);
+		
+	}
+}

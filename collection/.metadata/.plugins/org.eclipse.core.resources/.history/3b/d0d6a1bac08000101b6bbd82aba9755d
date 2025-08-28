@@ -1,0 +1,21 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.ListIterator;
+
+public class StringList {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("Sagarika");
+		list.add("Sidhartha");
+		list.add("Vaibhav");
+		list.add("Rupa");
+		list.add("Mama");
+		
+		System.out.println(list);
+		
+		Collections.sort(list);
+	}
+}

@@ -1,0 +1,5 @@
+package com.sn.map.entity;
+
+public class Employee {
+
+}

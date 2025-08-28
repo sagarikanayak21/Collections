@@ -1,0 +1,11 @@
+package com.sn.stdList;
+
+import com.sn.entity.Student;
+
+public class StudentListSort {
+	public static void main(String[] args) {
+		Student student1 = new Student(101, "sagarika");
+		Student student2 = new Student(102, "Sidhartha");
+		Student studen3 = new Student(103, "Rupa");
+	}
+}

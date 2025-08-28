@@ -1,0 +1,38 @@
+package com.sn.vo;
+
+public class StudentMarks {
+	private Integer phyMark;
+	private Integer chemMark;
+	private Integer mathMark;
+	
+	public StudentMarks(Integer phyMark, Integer chemMark, Integer mathMark) {
+		super();
+		this.phyMark = phyMark;
+		this.chemMark = chemMark;
+		this.mathMark = mathMark;
+	}
+	
+	public StudentMarks() {
+	}
+	
+	public Integer getPhyMark() {
+		return phyMark;
+	}
+	public void setPhyMark(Integer phyMark) {
+		this.phyMark = phyMark;
+	}
+	
+	public Integer getChemMark() {
+		return chemMark;
+	}
+	public void setChemMark(Integer chemMark) {
+		this.chemMark = chemMark;
+	}
+	
+	public Integer getMathMark() {
+		return mathMark;
+	}
+	public void setMathMark(Integer mathMark) {
+		this.mathMark = mathMark;
+	}
+}

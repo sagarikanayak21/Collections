@@ -1,0 +1,23 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+public class StreamStringLambda {
+	public static void main(String[] args) {
+		List<String> stringList = Arrays.asList("ABCD", "XY", "PQRST", "LMNOPQR");
+		System.out.println(stringList);
+		
+//		stringList.stream().filter(x -> x.length()>2).forEach(System.out::println);
+		
+//		stringList.stream().map(x -> "101-" + x).forEach(System.out::println);
+		
+		Optional<String> stringCont = stringList.stream().reduce((s1,s2) -> s1.concat(s2));
+		
+		if(stringCont.isPresent()) System.out.println(stringCont);
+		
+		
+		
+	}
+}

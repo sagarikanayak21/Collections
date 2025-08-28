@@ -1,0 +1,16 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamStringListSort {
+	public static void main(String[] args) {
+		List<String> stringList = Arrays.asList("Lucky", "sagarika", "Mama", "Rupa");
+		
+//		System.out.println(stringList);
+		
+		stringList.stream().forEach(System.out::print);
+		System.out.println(stringList);
+		
+	}
+}

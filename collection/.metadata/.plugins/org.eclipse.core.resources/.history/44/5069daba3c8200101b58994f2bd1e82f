@@ -1,0 +1,50 @@
+package com.sn.vo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+	private Integer stdId;
+	private String stdName;
+	private String branch;
+	List<Integer> marks = new ArrayList<>();
+	
+	public Student(Integer stdId, String stdName, String branch, List<Integer> marks) {
+		super();
+		this.stdId = stdId;
+		this.stdName = stdName;
+		this.branch = branch;
+		this.marks = marks;
+	}
+	
+	public Student() {
+	}
+	
+	public Integer getStdId() {
+		return stdId;
+	}
+	public void setStdId(Integer stdId) {
+		this.stdId = stdId;
+	}
+	
+	public String getStdName() {
+		return stdName;
+	}
+	public void setStdName(String stdName) {
+		this.stdName = stdName;
+	}
+	
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	
+	public List<Integer> getMarks() {
+		return marks;
+	}
+	public void setMarks(List<Integer> marks) {
+		this.marks = marks;
+	}
+}

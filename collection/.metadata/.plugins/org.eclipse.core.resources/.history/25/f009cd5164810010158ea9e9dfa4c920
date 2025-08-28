@@ -1,0 +1,14 @@
+package com.sn.practice;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+public class IntegerListPrint {
+	public static void main(String[] args) {
+		List<Integer> intList = Arrays.asList(34,28,90,17,46,78,57);
+		System.out.println(intList);
+		
+		Iterator<Integer> iterator = intList.iterator();
+	}
+}

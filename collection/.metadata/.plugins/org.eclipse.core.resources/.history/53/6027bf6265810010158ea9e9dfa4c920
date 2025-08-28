@@ -1,0 +1,43 @@
+package com.sn.practice;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class IntegerListPrint {
+	public static void main(String[] args) {
+		List<Integer> intList = Arrays.asList(34,28,90,17,46,78,57);
+		System.out.println(intList);
+		
+		Iterator<Integer> itr = intList.iterator();
+		while(itr.hasNext()) {
+			Integer intValue = itr.next();
+			System.out.println(intValue);
+		}
+		
+		Iterator<Integer> itr1 = intList.iterator();
+		while(itr1.hasNext()) {
+			Integer intValue1 = itr1.next();
+			System.out.print(intValue1 + " ");
+		}
+		System.out.println();
+		
+		ListIterator<Integer> listItr = intList.listIterator();
+		while(listItr.hasNext()) {
+			Integer intVaue2 = listItr.next();
+			System.out.print(intVaue2 + " ");
+		}
+		System.out.println();
+		
+		for(Integer num : intList) {
+			System.out.print(num + " ");
+		}
+		System.out.println();
+		
+		for(int i=0; i<intList.size(); i++) {
+			Integer num1 = intList.get(i);
+			System.out.println(num1);
+		}
+	}
+}

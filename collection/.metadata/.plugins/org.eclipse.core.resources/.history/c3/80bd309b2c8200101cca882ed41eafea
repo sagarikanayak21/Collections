@@ -1,0 +1,7 @@
+package com.sn.vo;
+
+public class StudentMarks {
+	private Integer phyMark;
+	private Integer chemMark;
+	private Integer mathMark;
+}

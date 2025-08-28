@@ -1,0 +1,29 @@
+package com.sn.empLst;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+import com.sn.entity.Employee;
+
+public class EmployeeList {
+	public static void main(String[] args) {
+		
+		Employee empObj = new Employee();
+		empObj.setEmpId(101);
+		empObj.setEmpName("Sagarika");
+		empObj.setSalary(10000.0);
+//		System.out.println(empObj);
+		List<Employee> empList = new ArrayList<>();
+		System.out.println(empList);
+	
+		ListIterator<Employee> itr = empList.listIterator();
+		while(itr.hasNext()) {
+			Employee emp = itr.next();
+			System.out.println(emp.getEmpId());
+			System.out.println(emp.getEmpName());
+			System.out.println(emp.getSalary());
+		}
+	}
+	
+}

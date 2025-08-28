@@ -1,0 +1,31 @@
+package com.sn.map;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class MonthMapSort {
+	public static void main(String[] args) {
+		Map<String, String> map = new HashMap<>();
+		map.put("Day5", "Thrusday");
+		map.put("Day7", "Saturday");
+		map.put("Day1", "Sunday");
+		map.put("Day4", "Wednesday");
+		map.put("Day2", "Monday");
+		map.put("Day3", "Tuesday");
+		
+		Set<Entry<String, String>> entrySet = map.entrySet();
+		
+		List<Entry<String, String>> list = new ArrayList<>(set);
+		list.sort(Map.Entry.comparingByKey());
+		
+		for(Map.Entry<String, String> entryList : list) {
+			System.out.println(entryList.getKey() + " " + entryList.getValue());
+		}
+		
+		
+	}
+}

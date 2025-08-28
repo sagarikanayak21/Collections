@@ -1,0 +1,25 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class StreamEmployeeLambda {
+	public static void main(String[] args) {
+		List<Employee> empList = Arrays.asList(new Employee(101, "Sagarika", 600.78),
+				new Employee(104, "Lucky", 400.65), new Employee(102, "Sidhartha", 300.90),
+				new Employee(103, "Rupa", 567.60));
+		System.out.println(empList);
+		 
+//		empList.stream().filter(x -> x.getSalary()>500.0).forEach(System.out::println);
+		
+//		empList.stream().filter(emp -> emp.getSalary()>400).forEach(x ->{
+//			System.out.println();
+//		});
+		
+		empList.stream().map(emp -> emp.getSalary() + 10000.0).forEach(System.out::println);
+		
+		
+	}
+}

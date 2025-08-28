@@ -1,0 +1,15 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.sn.entity.Student;
+
+public class StreamStudentListSort {
+	public static void main(String[] args) {
+		List<Student> stdList = Arrays.asList(new Student(102, "Sagarika"), new Student(101, "Lucky"),
+				new Student(103, "Rupa"));
+		
+		System.out.println(stdList);
+	}
+}

@@ -1,0 +1,18 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IntegerListSort {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		list.add(25);
+		list.add(10);
+		list.add(35);
+		list.add(15);
+		
+		System.out.println(list);
+		
+		list.sort(10);
+	}
+}

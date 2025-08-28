@@ -1,0 +1,20 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.sn.entity.Student;
+
+public class StreamStudentListSort {
+	public static void main(String[] args) {
+		List<Student> stdList = Arrays.asList(new Student(102, "Sagarika"), new Student(101, "Lucky"),
+				new Student(103, "Rupa"));
+		
+		System.out.println(stdList);
+		
+		//Sorting according to Student Class compareTo() method comparision
+		List<Student> sortingList = stdList.stream().sorted().collect(Collectors.toList());
+		System.out.println(sortingList);
+	}
+}

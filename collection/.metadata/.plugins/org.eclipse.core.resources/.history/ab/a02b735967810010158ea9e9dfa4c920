@@ -1,0 +1,15 @@
+package com.sn.practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class EmployeeListSort {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		empList.add(new Employee(102, "Sagarika", 300.50));
+		empList.add(new Employee(103, "Sangita", 100.30));
+		empLIst.add(new Employee(101, "Priyanka", 200.70));
+	}
+}

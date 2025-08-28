@@ -1,0 +1,9 @@
+package com.sn.practice;
+
+import java.util.ArrayList;
+
+public class Employee {
+	public static void main(String[] args) {
+		List<Object> empList = new ArrayList<>();
+	}
+}

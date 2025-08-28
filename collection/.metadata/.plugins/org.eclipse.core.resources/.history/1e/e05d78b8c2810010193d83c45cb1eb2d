@@ -1,0 +1,22 @@
+package com.sn.map;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class VegetablesMapPrint {
+	public static void main(String[] args) {
+		Map<Integer, String> vegetables = new TreeMap<>();
+		vegetables.put(104, "Potato");
+		vegetables.put(102, "Capsicum");
+		vegetables.put(101, "Lady's Finger");
+		vegetables.put(103, "Bitter Gourd");
+		
+		Set<Entry<Integer, String>> set = vegetables.entrySet();
+		Iterator itr = set.iterator();
+	}
+
+}

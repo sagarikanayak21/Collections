@@ -1,0 +1,50 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+
+import com.sn.vo.Student;
+
+public class StudentMarks {
+	public static void main(String[] args) {
+		List<Student> stdList = new ArrayList<>();
+		stdList.add(new Student(100, "Lucky", "Science", Arrays.asList(10,20,30)));
+		stdList.add(new Student(101, "Sagarika", "Science", Arrays.asList(40,50,60)));
+		stdList.add(new Student(102, "Rupa", "Science", Arrays.asList(70,80,90)));
+		
+		ListIterator<Student> listItr = stdList.listIterator();
+		while(listItr.hasNext()) {
+			Student std = listItr.next();
+			List<Integer> listMarks = std.getMarks();
+//			Integer totalMark = listMarks.stream().reduce((a,b) -> a+b).get();
+//			System.out.println("Student ID: " + std.getStdId() + " Total Marks: " + totalMark);	
+			
+			int sum = 0;
+//			for(int i=0; i<listMarks.size(); i++) {
+//				sum = sum + listMarks.get(i);
+//			}
+//			System.out.println("Student ID: " + std.getStdId() + " Total Marks: " + sum);
+			
+//			for(int number : listMarks) {
+//				sum = sum + number;
+//			}
+//			System.out.println("Student ID: " + std.getStdId() + " Total Marks: " + sum);
+			
+//			int i = 0;
+//			while(i<listMarks.size()) {
+//				sum = sum + listMarks.get(i);
+//				i++;
+//			}
+//			System.out.println("Student ID: " + std.getStdId() + " Total Marks: " + sum);
+			
+			ListIterator<Integer> listIterator = listMarks.listIterator();
+			while(listIterator.hasNext()) {
+				Integer num = listIterator.next();
+				sum = sum + num;
+			}
+			System.out.println(sum);
+		}
+	}
+}

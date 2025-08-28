@@ -1,0 +1,12 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class StreamEmployeeList {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+	}
+}

@@ -1,0 +1,21 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.vo.Student;
+import com.sn.vo.StudentMarks;
+
+public class StudentMarkDisplay {
+	public static void main(String[] args) {
+		List<Student> stdList = new ArrayList<>();
+		
+		StudentMarks stdMarks1 = new StudentMarks(89, 90, 96);
+		StudentMarks stdMarks2 = new StudentMarks(80, 76, 60);
+		StudentMarks stdMarks3 = new StudentMarks(56, 55, 61);
+		StudentMarks stdMarks4 = new StudentMarks(95, 91, 73);
+		
+		Student student1 = new Student(100, "Sagarika", "Science", stdMarks1);
+		
+	}
+}

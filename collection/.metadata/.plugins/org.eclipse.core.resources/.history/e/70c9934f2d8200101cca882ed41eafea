@@ -1,0 +1,36 @@
+package com.sn.vo;
+
+public class Student {
+	private Integer stdId;
+	private String stdName;
+	private String branch;
+	private StudentMarks stdMarks;
+	
+	public Integer getStdId() {
+		return stdId;
+	}
+	public void setStdId(Integer stdId) {
+		this.stdId = stdId;
+	}
+	
+	public String getStdName() {
+		return stdName;
+	}
+	public void setStdName(String stdName) {
+		this.stdName = stdName;
+	}
+	
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	
+	public StudentMarks getStdMarks() {
+		return stdMarks;
+	}
+	public void setStdMarks(StudentMarks stdMarks) {
+		this.stdMarks = stdMarks;
+	}
+}

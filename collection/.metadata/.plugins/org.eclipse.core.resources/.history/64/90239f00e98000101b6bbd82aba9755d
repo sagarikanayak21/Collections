@@ -1,0 +1,17 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class StreamEmployeeLambda {
+	public static void main(String[] args) {
+		List<Employee> empList = Arrays.asList(new Employee(101, "Sagarika", 600.78),
+				new Employee(104, "Lucky", 400.65), new Employee(102, "Sidhartha", 300.90),
+				new Employee(103, "Rupa", 467.60));
+		System.out.println(empList);
+		
+		
+	}
+}

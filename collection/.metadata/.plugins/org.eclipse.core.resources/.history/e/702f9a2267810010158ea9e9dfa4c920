@@ -1,0 +1,11 @@
+package com.sn.practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Employee {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		emp
+	}
+}

@@ -1,0 +1,49 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import com.sn.entity.Employee;
+
+public class StreamEmployeeLambda {
+	public static void main(String[] args) {
+		List<Employee> empList = Arrays.asList(new Employee(101, "Sagarika", 600.78),
+				new Employee(104, "Lucky", 400.65), new Employee(102, "Sidhartha", 300.90),
+				new Employee(103, "Rupa", 567.60));
+		System.out.println(empList);
+
+//		empList.stream().filter(x -> x.getSalary()>500.0).forEach(System.out::println);
+
+//		empList.stream().filter(emp -> emp.getSalary()>400).forEach(x ->{
+//			System.out.println();
+//		});
+
+//		List<Double> empSal = empList.stream().map(emp -> emp.getSalary() + 10000.0)
+//				.collect(Collectors.toList());
+//		System.out.println(empSal);
+
+		List<Employee> updatedEmpList = empList.stream()
+				.map(emp -> new Employee(emp.getEmpId(), emp.getEmpName(), emp.getSalary() + 10000.0))
+				.collect(Collectors.toList());
+		updatedEmpList.stream().forEach(System.out::println);
+		
+		double totalSalary = empList.stream().mapToDouble(Employee::getSalary).sum();
+		System.out.println("All employee salary: " + totalSalary);
+
+		Optional<Employee> highestPaidEmp = empList.stream().max(Comparator.comparingDouble(Employee::getSalary));
+		if (highestPaidEmp.isPresent()) {
+			System.out.println("Highest paid employee: " + highestPaidEmp.get());
+		}
+
+		Optional<Employee> lowestPaidEmp = empList.stream().min(Comparator.comparingDouble(Employee::getSalary));
+		if (lowestPaidEmp.isPresent()) {
+			System.out.println("Lowest paid employee: " + lowestPaidEmp.get());
+		}
+
+		double avgSalary = empList.stream().mapToDouble(Employee::getSalary).average().orElse(0.0);
+		System.out.println("Average Salary: " + avgSalary);
+	}
+}

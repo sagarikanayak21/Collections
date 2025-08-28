@@ -1,0 +1,18 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class SortEmployeeList {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		
+		empList.add(new Employee(102, "Sidhartha", 20.0));
+		empList.add(new Employee(101,"Sagarika", 10.0));
+		empList.add(new Employee(103, "Rupa" , 30.0));
+		System.out.println(empList);
+		
+	}
+}

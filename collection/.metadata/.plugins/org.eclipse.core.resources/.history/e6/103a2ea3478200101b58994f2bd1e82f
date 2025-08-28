@@ -1,0 +1,16 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class EmployeeTestCase {
+	public static void main(String[] args) {
+		List<Object> empList = new ArrayList<>();
+		
+	}
+	public Employee consturctEmpObject() {
+		
+	}
+}

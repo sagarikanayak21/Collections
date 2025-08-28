@@ -1,0 +1,26 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+import com.sn.entity.Employee;
+
+public class EmployeeTestCase1 {
+	public static void main(String[] args) {
+		List<Employee> employeeList = new ArrayList<>();
+		employeeList.add(new Employee(101, "Lucky", 400.50));
+		employeeList.add(new Employee(102, "Sagarika", 500.0));
+		employeeList.add(new Employee(103, "Mama", 300.50));
+
+		ListIterator<Employee> listItr = employeeList.listIterator();
+		while (listItr.hasNext()) {
+			Employee empListItr = listItr.next();
+			EmployeeUtil.printEmpDetails(empListItr);
+//			System.out.print(empListItr.getEmpId() + " ");
+//			System.out.print(empListItr.getEmpName() + " ");
+//			System.out.print(empListItr.getSalary() + " ");
+//			System.out.println();
+		}
+	}
+}

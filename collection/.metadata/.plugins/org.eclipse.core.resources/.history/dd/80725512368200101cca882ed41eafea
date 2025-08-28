@@ -1,0 +1,52 @@
+package com.sn.vo;
+
+public class Student {
+	private Integer stdId;
+	private String stdName;
+	private String branch;
+	private Integer phyMark;
+	private Integer chemMark;
+	private Integer mathMark;
+	
+	public Integer getStdId() {
+		return stdId;
+	}
+	public void setStdId(Integer stdId) {
+		this.stdId = stdId;
+	}
+	
+	public String getStdName() {
+		return stdName;
+	}
+	public void setStdName(String stdName) {
+		this.stdName = stdName;
+	}
+	
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	
+	public Integer getPhyMark() {
+		return phyMark;
+	}
+	public void setPhyMark(Integer phyMark) {
+		this.phyMark = phyMark;
+	}
+	
+	public Integer getChemMark() {
+		return chemMark;
+	}
+	public void setChemMark(Integer chemMark) {
+		this.chemMark = chemMark;
+	}
+	
+	public Integer getMathMark() {
+		return mathMark;
+	}
+	public void setMathMark(Integer mathMark) {
+		this.mathMark = mathMark;
+	}
+}

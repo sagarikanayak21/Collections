@@ -1,0 +1,44 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+import com.sn.vo.Student;
+import com.sn.vo.StudentMarks;
+
+public class StudentMarkDisplay {
+	public static void main(String[] args) {
+		StudentMarks stdMarks1 = new StudentMarks(89, 90, 96);
+		StudentMarks stdMarks2 = new StudentMarks(80, 76, 60);
+		StudentMarks stdMarks3 = new StudentMarks(56, 55, 61);
+		StudentMarks stdMarks4 = new StudentMarks(95, 91, 73);
+		
+		Student student1 = new Student(100, "Sagarika", "Science", stdMarks1);
+		Student student2 = new Student(102, "Sangita", "Science", stdMarks2);
+		Student student3 = new Student(103, "Pratingya", "Science", stdMarks3);
+		Student student4 = new Student(104, "Priyanka", "Science", stdMarks4);
+		
+		List<Student> stdList = new ArrayList<>();
+		stdList.add(student1);
+		stdList.add(student2);
+		stdList.add(student3);
+		stdList.add(student4);
+//		System.out.println(stdList);
+		ListIterator<Student> listItr = stdList.listIterator();
+		while(listItr.hasNext()) {
+			Student std = listItr.next();
+//			System.out.println(std.getStdId());
+//			System.out.println(std.getStdName());
+//			System.out.println(std.getBranch());
+//			System.out.println(std.getStdMarks());
+			StudentMarks stdMarks = std.getStdMarks();
+			
+			int totalMarks = stdMarks.getPhyMark() + stdMarks.getChemMark() + stdMarks.getMathMark();
+//			System.out.println("Student ID: "+ std.getStdId() + " Total Marsks: " + totalMarks);
+//			System.out.println("Student ID: "+ std.getStdId() + " Total Marsks: " + totalMarks);
+//			System.out.println("Student ID: "+ std.getStdId() + " Total Marsks: " + totalMarks);
+//			System.out.println("Student ID: "+ std.getStdId() + " Total Marsks: " + totalMarks);
+		}
+	}
+}

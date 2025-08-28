@@ -1,0 +1,17 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamIntegerListSort {
+	public static void main(String[] args) {
+		List<Integer> intList = Arrays.asList(10,90,60,50);
+		System.out.println(intList);
+		
+//		intList.stream().forEach(System.out::print);
+		
+		intList.stream().forEach(i -> {
+			System.out.print(i + " ");
+		});
+	}
+}

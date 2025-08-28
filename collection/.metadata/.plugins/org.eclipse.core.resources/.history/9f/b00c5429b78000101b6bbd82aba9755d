@@ -1,0 +1,8 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IntegerList {
+	List<Integer> al = new ArrayList<>();
+}

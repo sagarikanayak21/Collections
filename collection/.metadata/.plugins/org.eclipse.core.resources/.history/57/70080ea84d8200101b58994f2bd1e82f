@@ -1,0 +1,18 @@
+package com.sn;
+
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class EmployeeUtil {
+	public static void printEmpDetails(Employee e) {
+		System.out.println(e.getEmpId());
+		System.out.println(e.getEmpName());
+		System.out.println(e.getSalary());
+	}
+	
+	public List<Employee> updateSalary(List<Employee> emp, Double addExtraAmount) {
+		Employee e = new Employee();
+		e.getSalary() + addExtraAmount;
+	}
+}

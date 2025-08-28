@@ -1,0 +1,17 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class EmployeeTestCase1 {
+	public static void main(String[] args) {
+		List<Object> employeeList = new ArrayList<>();
+		employeeList.add(new Employee(101, "Lucky", 400.50));
+		employeeList.add(new Employee(102, "Sagarika", 500.0));
+		employeeList.add(new Employee(103, "Mama", 300.50));
+		
+		System.out.println(employeeList);
+	}
+}

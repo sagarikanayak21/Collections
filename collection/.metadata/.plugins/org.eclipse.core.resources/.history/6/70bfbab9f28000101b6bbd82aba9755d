@@ -1,0 +1,17 @@
+package com.sn;
+
+@FunctionalInterface
+interface AddI2 {
+	public void add(int a, int b);
+}
+
+public class TestCase2 implements AddI2 {
+	public static void main(String[] args) {
+		
+	}
+
+	@Override
+	public void add(int a, int b) {
+		
+	}
+}

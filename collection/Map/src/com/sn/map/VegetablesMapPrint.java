@@ -1,0 +1,34 @@
+package com.sn.map;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class VegetablesMapPrint {
+	public static void main(String[] args) {
+		Map<Integer, String> vegetables = new TreeMap<>();
+		vegetables.put(104, "Potato");
+		vegetables.put(102, "Capsicum");
+		vegetables.put(101, "Lady's Finger");
+		vegetables.put(103, "Bitter Gourd");
+		vegetables.put(105, null);
+		vegetables.put(106, null);
+		
+		Set<Entry<Integer, String>> set = vegetables.entrySet();
+		
+		Iterator itr = set.iterator();
+		while(itr.hasNext()) {
+			Map.Entry<Integer, String> next =(Map.Entry<Integer, String>) itr.next();
+			System.out.println(next.getKey() + " " + next.getValue());
+		}
+	}
+}
+
+/*
+ * A TreeMap does not maintain insertion order. Instead, it stores its elements
+ * in a sorted order based on the keys. This sorting can be either the natural
+ * ordering of the keys or a custom order defined by a Comparator provided
+ * during the TreeMap's creation.
+ */

@@ -1,0 +1,14 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.sn.vo.Student;
+
+public class StudentMarks {
+	public static void main(String[] args) {
+		List<Integer> stdList = new ArrayList<>();
+		stdList.add(new Student(100, "Lucky", "Science", Arrays.asList(10,20,30)));
+	}
+}

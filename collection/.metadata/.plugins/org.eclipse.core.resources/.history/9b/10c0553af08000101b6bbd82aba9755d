@@ -1,0 +1,23 @@
+package com.sn;
+ 
+@FunctionalInterface
+interface AddI {
+	public void add(int a, int b);
+}
+
+public class TestCase /*implements AddI*/{
+	public static void main(String[] args) {
+		System.out.println("Hello");
+		TestCase test = new TestCase();
+//		AddI aI = (int a, int b ) -> System.out.println(a+b);
+//		aI.add(29, 19);
+		
+		AddI aI = (a,b) -> System.out.println(a+b);
+		
+	}
+	
+//	@Override
+//	public void add(int a, int b) {
+//		System.out.println(a+b);
+//	}
+}

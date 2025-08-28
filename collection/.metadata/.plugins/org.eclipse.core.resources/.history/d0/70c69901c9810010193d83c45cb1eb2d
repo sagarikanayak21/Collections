@@ -1,0 +1,44 @@
+package com.sn.map;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class WeekDaysMapSort {
+	public static void main(String[] args) {
+		Map<String, String> map = new LinkedHashMap();
+		map.put("Day5", "Thrusday");
+		map.put("Day7", "Saturday");
+		map.put("Day1", "Sunday");
+		map.put("Day6", "Friday");
+		map.put("Day4", "Wednesday");
+		map.put("Day2", "Monday");
+		map.put("Day3", "Tuesday");
+		
+		Set<Entry<String, String>> entrySet = map.entrySet();
+		
+		Iterator<Entry<String, String>> iterator = entrySet.iterator();
+		while(iterator.hasNext()) {
+			Map.Entry<String, String> next = iterator.next();
+			System.out.println(next.getKey() + " " + next.getValue());
+		}
+		
+		System.out.println();
+		
+		List<Entry<String, String>> list = new ArrayList<>(entrySet);
+		list.sort(Map.Entry.comparingByKey());
+		
+		for(Map.Entry<String, String> entryList : list) {
+			System.out.println(entryList.getKey() + " " + entryList.getValue());
+		}
+		
+		System.out.println(map.remove("Day6");
+	}
+}
+
+// LinkedHashMap in Java maintains the insertion order of elements by default.

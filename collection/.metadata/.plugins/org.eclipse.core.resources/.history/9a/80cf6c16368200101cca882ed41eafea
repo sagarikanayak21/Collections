@@ -1,0 +1,12 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.vo.Student;
+
+public class StudentListPrint {
+	public static void main(String[] args) {
+		List<Student> stdList = new ArrayList<>();
+	}
+}

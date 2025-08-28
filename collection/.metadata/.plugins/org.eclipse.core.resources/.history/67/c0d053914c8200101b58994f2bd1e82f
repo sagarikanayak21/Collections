@@ -1,0 +1,11 @@
+package com.sn;
+
+import com.sn.entity.Employee;
+
+public class EmployeeUtil {
+	public static void printEmpDetails(Employee e) {
+		System.out.println(e.getEmpId());
+		System.out.println(e.getEmpName());
+		System.out.println(e.getSalary());
+	}
+}

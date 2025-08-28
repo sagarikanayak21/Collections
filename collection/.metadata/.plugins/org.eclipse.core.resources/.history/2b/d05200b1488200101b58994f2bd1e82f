@@ -1,0 +1,19 @@
+package com.sn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class EmployeeTestCase {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		empList.add(new Employee(101, "Sagarika", 200.50));
+		empList.add(new Employee(102, "Rupa", 400.50));
+		empList.add(new Employee(103, "Lucky", 500.50));
+		
+	}
+	public Employee consturctEmpObject(String id, String name, String sal) {
+		return new Employee();
+	}
+}

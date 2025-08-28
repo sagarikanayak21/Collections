@@ -1,0 +1,25 @@
+package com.sn.map;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class IntegerMapPrint {
+	public static void main(String[] args) {
+		Map<Integer, String> fruitsName = new HashMap<>();
+		fruitsName.put(101, "Apple");
+		fruitsName.put(102, "Guava");
+		fruitsName.put(103, "Pomegranate");
+		fruitsName.put(104, "Banana");
+		
+		Set entrySet = fruitsName.entrySet();
+		Iterator itr = entrySet.iterator();
+		while(itr.hasNext()) {
+			Map.Entry<Integer, String> next = (Map.Entry) itr.next();
+			System.out.println(next.getKey() + " " + next.getValue() );
+		}
+	}
+
+}

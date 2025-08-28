@@ -1,0 +1,9 @@
+package com.sn;
+ 
+interface AddI {
+	public void add();
+}
+
+public class TestCase{
+	
+}

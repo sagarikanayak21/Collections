@@ -1,0 +1,13 @@
+package com.sn.map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.sn.map.entity.Employee;
+
+public class EmployeeMapPrint {
+	public static void main(String[] args) {
+		Map<Integer, Employee> map = new HashMap<Employee>();
+		
+	}
+}

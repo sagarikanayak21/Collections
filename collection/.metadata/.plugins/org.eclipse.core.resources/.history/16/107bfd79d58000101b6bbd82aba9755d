@@ -1,0 +1,29 @@
+package com.sn.stdList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import com.sn.entity.Student;
+
+public class StudentListSort {
+	public static void main(String[] args) {
+		Student student1 = new Student(101, "sagarika");
+		Student student2 = new Student(102, "Sidhartha");
+		Student student3 = new Student(103, "Rupa");
+		
+		List<Student> studentList = new ArrayList<>();
+		studentList.add(student1);
+		studentList.add(student2);
+		studentList.add(student3);
+		
+		Collections.sort(studentList, new Comparator<Student>() {
+			@Override
+			public int compare(Student std1, Student std2) {
+				return Integer.compare(std1.getStdId(), std2.getStdId());
+			}
+			
+		});
+	}
+}

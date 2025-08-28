@@ -1,0 +1,14 @@
+package com.sn.empLst;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sn.entity.Employee;
+
+public class EmployeeList {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package com.sn.map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class IntegerMapPrint {
+	public static void main(String[] args) {
+		Map<Integer, String> fruitsName = new HashMap<>();
+		fruitsName.put(101, "Apple");
+		fruitsName.put(102, "Guava");
+		fruitsName.put(103, "Pomegranate");
+		fruitsName.put(104, "Banana");
+		
+		for(Map.entry(Integer, String)) fName = 
+	}
+
+}

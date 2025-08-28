@@ -1,0 +1,11 @@
+package com.sn;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamStringLambda {
+	public static void main(String[] args) {
+		List<String> stringList = Arrays.asList("ABC", "XYZ", "PQR", "LMN");
+		System.out.println(stringList);
+	}
+}
